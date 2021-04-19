@@ -3,7 +3,8 @@ name: CRON
 on:
   push:
     branches:
-      - main
+      - main      
+  workflow_dispatch:
   schedule:
     - cron: "0,30 * * * *"
 
